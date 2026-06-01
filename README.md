@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 💬 Mini Chat Room
 
 A real-time multi-user chat application built with **Python Flask**, **HTML**, **CSS**, and **JavaScript** — no WebSockets required.
@@ -108,3 +109,7 @@ Chat History
 ## 📄 License
 
 MIT — free to use, modify, and distribute.
+=======
+# MiniChatSystem
+A Simple Flask based chat application
+>>>>>>> dfd3ff7ef8ba7d34435a3b7774809e07c803485f
