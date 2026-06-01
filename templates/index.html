@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python Chat Room</title>
+  <link rel="stylesheet" href="/static/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- JOIN SCREEN -->
+<div id="join-screen" class="screen active">
+  <div class="join-card">
+    <div class="brand">
+      <span class="brand-icon">💬</span>
+      <h1>Python<br/><span>Chat Room</span></h1>
+    </div>
+    <p class="subtitle">A real-time chat built with Flask</p>
+    <div class="input-group">
+      <label for="username-input">Enter your username</label>
+      <input id="username-input" type="text" maxlength="20" placeholder="e.g. Gopal" autocomplete="off"/>
+    </div>
+    <button id="join-btn" class="btn-primary">Join Chat →</button>
+    <div id="join-error" class="error-msg"></div>
+  </div>
+</div>
+
+<!-- CHAT SCREEN -->
+<div id="chat-screen" class="screen">
+
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <span class="brand-icon-sm">💬</span>
+      <div>
+        <div class="header-title">Python Chat Room</div>
+        <div class="header-sub">
+          <span class="online-dot"></span>
+          <span id="online-count">0</span> online
+        </div>
+      </div>
+    </div>
+    <div class="header-right">
+      <button id="clear-btn" class="icon-btn" title="Clear chat">🗑️</button>
+      <button id="theme-btn" class="icon-btn" title="Toggle theme">🌙</button>
+      <button id="leave-btn" class="btn-danger">Leave</button>
+    </div>
+  </header>
+
+  <!-- Chat history -->
+  <div id="chat-history">
+    <div id="messages-list"></div>
+  </div>
+
+  <!-- Message input -->
+  <div class="chat-input-bar">
+    <input id="msg-input" type="text" maxlength="500" placeholder="Type a message... (Enter to send)" autocomplete="off"/>
+    <button id="send-btn" class="btn-send">Send ➤</button>
+  </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
